@@ -9,12 +9,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import java.util.Arrays;
 public class C01_TekrarTesti {
+    // 1 nci satır
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         //2- https://www.google.com/ adresine gidin
+
         driver.get("https://www.google.com/");
         //3- cookies uyarisini kabul ederek kapatin
         driver.findElement(By.xpath("//div[text()='Ich stimme zu']")).click();
