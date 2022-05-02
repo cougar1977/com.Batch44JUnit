@@ -10,6 +10,7 @@ import java.time.Duration;
 import java.util.Arrays;
 public class C01_TekrarTesti {
     // 1 nci satır
+    //2 nci satır
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
